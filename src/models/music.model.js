@@ -9,7 +9,7 @@ const musicSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    artis: {
+    artist: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "user",
         required: true
