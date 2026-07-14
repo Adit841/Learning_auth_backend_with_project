@@ -6,10 +6,10 @@ const albumSchema = new mongoose.Schema({
         type:String,
         required: true
     },
-    music:{
+    music:[{
         type:mongoose.Schema.Types.ObjectId,
         ref: "music"
-    },
+    }],
     artist: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "user",
